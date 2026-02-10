@@ -737,6 +737,136 @@ a {
   .social-links a:hover {
     color: var(--dark-color);
   }
+/* Hover effect for full Achievements card */
+.testimonials-thumb {
+    transition: all 0.35s ease;
+    border-radius: 12px;
+    padding: 20px;
+    background: #ffffff;
+}
+
+.testimonials-thumb:hover {
+    background: linear-gradient(135deg, #f8f9fa, #eef3ff);
+    transform: translateY(-6px);
+    box-shadow: 0 12px 25px hsl(204, 98%, 50%); 
+}
+
+/* Title hover */
+.testimonials-thumb:hover h5 {
+      color: hsl(204, 98%, 50%);
+
+    transition: color 0.3s ease;
+}
+
+/* Achievements text hover */
+.testimonials-thumb:hover p {
+    color: #333;
+}
+
+/* Smooth text transition */
+.testimonials-thumb h5,
+.testimonials-thumb p,
+.testimonials-thumb span {
+    transition: all 0.3s ease;
+}
+
+  .testimonials-thumb:hover .sub-title {
+    font-weight: 600;
+}
+.testimonials-info p {
+    transition: all 0.3s ease;
+    padding: 5px 8px;
+    border-radius: 6px;
+}
+
+.testimonials-info p {
+    transition: all 0.3s ease;
+    padding: 6px 8px;
+    border-radius: 6px;
+}
+
+.testimonials-info p {
+    transition: all 0.3s ease;
+    padding: 6px 10px;
+    border-left: 3px solid transparent;
+}
+
+.testimonials-info p::before {
+    content: "✔";
+    margin-right: 8px;
+    color: transparent;
+    transition: 0.3s;
+}
+
+.testimonials-info p {
+    transition: all 0.3s ease;
+    padding: 6px 10px;
+    border-left: 3px solid transparent;
+}
+
+.testimonials-info p:hover {
+    background: #eef3ff;
+    border-left: 3px solid hsl(204, 98%, 50%);
+
+    transform: translateX(6px);
+}
+
+
+/* Course Cards */
+#courses .card {
+    border-radius: 14px;
+    transition: all 0.35s ease;
+    border: 1px solid #f0f0f0;
+}
+
+/* Hover effect */
+#courses .card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 16px 35px rgba(0, 0, 0, 0.12);
+    border-color: hsl(204, 98%, 50%);
+}
+
+
+
+/* Date text */
+#courses .card-text {
+    color: #666;
+}
+
+/* Button hover enhancement */
+#courses .card .custom-btn {
+    transition: all 0.3s ease;
+}
+
+#courses .card:hover .custom-btn {
+    background-color: hsl(204, 98%, 50%);
+    color: #fff;
+}
+
+#courses .card {
+    position: relative;
+    overflow: hidden;
+}
+
+#courses .card::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 4px;
+    height: 100%;
+    background: hsl(204, 98%, 50%);
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 0.35s ease;
+}
+
+#courses .card:hover::before {
+    transform: scaleY(1);
+}
+
+
+
 
 
   /*---------------------------------------

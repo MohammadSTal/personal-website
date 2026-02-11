@@ -737,6 +737,20 @@ a {
   .social-links a:hover {
     color: var(--dark-color);
   }
+
+  /* لون التحديد بالنص */
+::selection {
+    background: hsl(204, 98%, 50%);
+    color: #fff; /* لون النص بعد التحديد */
+}
+
+/* للمتصفحات القديمة */
+::-moz-selection {
+    background: hsl(204, 98%, 50%);
+    color: #fff;
+}
+
+
 /* Hover effect for full Achievements card */
 .testimonials-thumb {
     transition: all 0.35s ease;
@@ -758,10 +772,15 @@ a {
     transition: color 0.3s ease;
 }
 
-/* Achievements text hover */
-.testimonials-thumb:hover p {
-    color: #333;
+/* Hover p */
+.testimonials-info p {
+    transition: color 0.3s ease;
 }
+
+.testimonials-info p:hover {
+    color: #000000;
+}
+
 
 /* Smooth text transition */
 .testimonials-thumb h5,
@@ -791,12 +810,7 @@ a {
     border-left: 3px solid transparent;
 }
 
-.testimonials-info p::before {
-    content: "✔";
-    margin-right: 8px;
-    color: transparent;
-    transition: 0.3s;
-}
+
 
 .testimonials-info p {
     transition: all 0.3s ease;
